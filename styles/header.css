@@ -55,10 +55,14 @@ div input{
     transition: all linear 160ms;
     outline: none; 
     position: relative;
-    top: 40px;
+    top: 10px;
 }
 .icon1{
     position: relative;
+    right: 23
+    px;
+    top: 13px;
+    font-size: 20px;
 
 }
 .mobile-menu-icon {
@@ -103,13 +107,6 @@ div input{
     .mobile-menu .nav-item {
         display: block;
         padding-top: 1.2rem;
-    }
-    .mobile-menu .login-button {
-        display: block;
-        padding: 1rem 2rem;
-    }
-    .mobile-menu .login-button button {
-        width: 100%;
     }
     .open {
         display: block;
