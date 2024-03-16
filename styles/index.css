@@ -7,135 +7,138 @@ body {
     width: 100vw;
     height: 100vh;
     box-sizing: border-box;
-}  
-.site{ 
-    width: 100vw;
-    height: 100vh;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    background-image: url(./../assets/ef2e9e28ee33b7eac7d47284cf28b176.png);  
-} 
-@media (max-width: 610px) {
-    .site{
-        flex-direction: column;
-    }
-    .ld-Esquerdo{
-        width: 100%;
-        height: auto;  
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .ld-Esquerdo h1{
-        display: none;
-    } 
-    .image{
-        width: 55vw;
-        position: relative;
-        bottom: 110px;
-      }
-    .ld-Direito{
-        width: 100%;
-        height: auto;  
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      } 
-      .login{
-        width: 60%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 25px 30px;
-        background-color: rgb(3, 46, 82);
-        border-radius: 25px;
-        box-shadow: 0px 10px 40px rgb(90, 87, 87);
-        position: relative;
-        bottom: 120px;
-    }
-    .login h1{
-        color: #ffffff;
-        font-weight: 800;
-        margin: 0;
-        font-size: 8vw;
-    }
-    .user-login{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        margin: 1px 0px;
-    }
-
-    .user-login #inputLogin{
-        width: 100%;
-        border: none;
-        border-radius: 10px;
-        padding: 15px;
-        background-color: rgb(0, 0, 0);
-        color: aliceblue;
-        font-size: 12pt;
-        box-shadow: 0px 10px 40px rgb(90, 87, 87) ;
-        outline: none;
-        box-sizing: border-box;
-    }
-    .user-login #inputLogin:hover{
-        border: 1px solid #f72585;
-    }
-    .user-login > label{
-        color: aliceblue;
-        margin-bottom: 10px;
-    }
-    
-    .user-login > #inputLogin::placeholder{
-        color: aliceblue;
-    }
-    .user-login #user{
-        font-size: 20px;
-        color: #ffffff;
-        position: relative;
-        bottom: 35px;
-        right: 25px;
-    }
-    .user-login #cad{
-        font-size: 20px;
-        color: #ffffff;
-        position: relative;
-        bottom: 35px;
-        right: 25px;
-    }
-    .result{
-        width: 60%;
-        padding: 16px 0px;
-        margin: 5px;
-        border: none;
-        border-radius: 8px;
-        outline: none;
-        text-transform: uppercase;
-        font-weight: 800;
-        letter-spacing: 3px;
-        color: rgb(3, 46, 82);
-        background-color: rgb(255, 255, 255);
-        cursor: pointer;
-        box-shadow: 0 10px 40px -12px rgb(27, 201, 36);
-    }
-    .result:hover{
-        transform: scale(1.05);
-        background-color: #15ff00;
-    
-    }
-
 }
-@media (max-width: 968px){
+@media (min-width: 767px){
     .site{ 
+        width: 100vw;
+        height: 100vh;
+        display: flex; 
         flex-direction: column;
-    }  
+        justify-content: center;
+        align-items: center;
+        background-image: url(./../assets/ef2e9e28ee33b7eac7d47284cf28b176.png);  
+        }
+        .ld-Esquerdo{
+            width: 100%;
+            height: auto;  
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .ld-Esquerdo h1{
+            display: none;
+        } 
+        .image{
+            width: 55vw;
+            position: relative;
+            bottom: 110px;
+          }
+        .ld-Direito{
+            width: 100%;
+            height: auto;  
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          } 
+          .login{
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 25px 30px;
+            background-color: rgb(3, 46, 82);
+            border-radius: 25px;
+            box-shadow: 0px 10px 40px rgb(90, 87, 87);
+            position: relative;
+            bottom: 120px;
+        }
+        .login h1{
+            color: #ffffff;
+            font-weight: 800;
+            margin: 0;
+            font-size: 8vw;
+        }
+        .user-login{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            margin: 1px 0px;
+        }
     
+        .user-login #inputLogin{
+            width: 100%;
+            border: none;
+            border-radius: 10px;
+            padding: 15px;
+            background-color: rgb(0, 0, 0);
+            color: aliceblue;
+            font-size: 12pt;
+            box-shadow: 0px 10px 40px rgb(90, 87, 87) ;
+            outline: none;
+            box-sizing: border-box;
+        }
+        .user-login #inputLogin:hover{
+            border: 1px solid #f72585;
+        }
+        .user-login > label{
+            color: aliceblue;
+            margin-bottom: 10px;
+        }
+        
+        .user-login > #inputLogin::placeholder{
+            color: aliceblue;
+        }
+        .user-login #user{
+            font-size: 20px;
+            color: #ffffff;
+            position: relative;
+            bottom: 35px;
+            right: 25px;
+        }
+        .user-login #cad{
+            font-size: 20px;
+            color: #ffffff;
+            position: relative;
+            bottom: 35px;
+            right: 25px;
+        }
+        .result{
+            width: 60%;
+            padding: 16px 0px;
+            margin: 5px;
+            border: none;
+            border-radius: 8px;
+            outline: none;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 3px;
+            color: rgb(3, 46, 82);
+            background-color: rgb(255, 255, 255);
+            cursor: pointer;
+            box-shadow: 0 10px 40px -12px rgb(27, 201, 36);
+        }
+        .result:hover{
+            transform: scale(1.05);
+            background-color: #15ff00;
+        
+        }
+    
+}  
+@media (min-width: 1023px){
+    .site{ 
+        width: 100vw;
+        height: 100vh;
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./../assets/ef2e9e28ee33b7eac7d47284cf28b176.png);  
+        }
     .ld-Esquerdo{
         width: 100%;
         height: auto;  
@@ -246,115 +249,124 @@ body {
     
     }
 } 
-/* 
-    .ld-Esquerdo{
-        width: 50vw;
+
+@media (max-width: 100024){
+    .site{ 
+        width: 100vw;
         height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .ld-Esquerdo h1{
-        color: #ffffff;
-        font-size: 5vw;
-    }
-    .image{
-        width: 50vw;
-    }
-    .ld-Direito{
-        width: 50vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .login{
-        width: 70%;
-        display: flex;
+        display: flex; 
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-        padding: 30px 35px;
-        background-color: rgb(3, 46, 82);
-        border-radius: 25px;
-        box-shadow: 0px 10px 40px rgb(90, 87, 87);
-    }
-    .login h1{
-        color: #ffffff;
-        font-weight: 800;
-        margin: 0;
-        font-size: 5vw;
-        position: relative;
-        bottom: 1vw;
-    }
-    .user-login{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        margin: 10px 0px;
-    }
-
-    .user-login input{
-        width: 100%;
-        border: none;
-        border-radius: 10px;
-        padding: 15px;
-        background-color: rgb(0, 0, 0);
-        color: aliceblue;
-        font-size: 12pt;
-        box-shadow: 0px 10px 40px rgb(90, 87, 87) ;
-        outline: none;
-        box-sizing: border-box;
-    }
-    .user-login input:hover{
-        border: 1px solid #f72585;
-    }
-    .user-login > label{
-        color: aliceblue;
-        margin-bottom: 10px;
-    }
+        background-image: url(./../assets/ef2e9e28ee33b7eac7d47284cf28b176.png);  
+        }
+        .ld-Esquerdo{
+            width: 50vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
     
-    .user-login > input::placeholder{
-        color: aliceblue;
-    }
-    .user-login #user{
-        font-size: 27px;
-        color: #ffffff;
-        position: relative;
-        bottom: 38px;
-        right: 29px;
-    }
-    .user-login #cad{
-        font-size: 27px;
-        color: #ffffff;
-        position: relative;
-        bottom: 38px;
-        right: 29px;
-    }
+        .ld-Esquerdo h1{
+            color: #ffffff;
+            font-size: 5vw;
+        }
+        .image{
+            width: 50vw;
+        }
+        .ld-Direito{
+            width: 50vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
     
-    .result{
-        width: 70%;
-        padding: 16px 0px;
-        margin: 25px;
-        border: none;
-        border-radius: 8px;
-        outline: none;
-        text-transform: uppercase;
-        font-weight: 800;
-        letter-spacing: 3px;
-        color: rgb(3, 46, 82);
-        background-color: rgb(255, 255, 255);
-        cursor: pointer;
-        box-shadow: 0 10px 40px -12px rgb(2, 163, 10);
-    }
-    .result:hover{
-        transform: scale(1.05);
-        background-color: #15ff00;
+        .login{
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 30px 35px;
+            background-color: rgb(3, 46, 82);
+            border-radius: 25px;
+            box-shadow: 0px 10px 40px rgb(90, 87, 87);
+        }
+        .login h1{
+            color: #ffffff;
+            font-weight: 800;
+            margin: 0;
+            font-size: 5vw;
+            position: relative;
+            bottom: 1vw;
+        }
+        .user-login{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            margin: 10px 0px;
+        }
     
-    }
+        .user-login input{
+            width: 100%;
+            border: none;
+            border-radius: 10px;
+            padding: 15px;
+            background-color: rgb(0, 0, 0);
+            color: aliceblue;
+            font-size: 12pt;
+            box-shadow: 0px 10px 40px rgb(90, 87, 87) ;
+            outline: none;
+            box-sizing: border-box;
+        }
+        .user-login input:hover{
+            border: 1px solid #f72585;
+        }
+        .user-login > label{
+            color: aliceblue;
+            margin-bottom: 10px;
+        }
+        
+        .user-login > input::placeholder{
+            color: aliceblue;
+        }
+        .user-login #user{
+            font-size: 27px;
+            color: #ffffff;
+            position: relative;
+            bottom: 38px;
+            right: 29px;
+        }
+        .user-login #cad{
+            font-size: 27px;
+            color: #ffffff;
+            position: relative;
+            bottom: 38px;
+            right: 29px;
+        }
+        
+        .result{
+            width: 70%;
+            padding: 16px 0px;
+            margin: 25px;
+            border: none;
+            border-radius: 8px;
+            outline: none;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 3px;
+            color: rgb(3, 46, 82);
+            background-color: rgb(255, 255, 255);
+            cursor: pointer;
+            box-shadow: 0 10px 40px -12px rgb(2, 163, 10);
+        }
+        .result:hover{
+            transform: scale(1.05);
+            background-color: #15ff00;
+        }  
+}
