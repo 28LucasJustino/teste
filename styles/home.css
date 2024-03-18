@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    background-color: #464646;
+    box-shadow: 0px 3px 10px #000000;
+}
+
+.site {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+    height: 18vh;
+}
+.image{
+    display: flex;
+    width: 10vw;
+    position: relative;
+    bottom: 2vw;
+    right: 5vh;
+}
+.inputBusca{
+    display: flex;
+    font-size: 23px;
+    position: relative;
+    top: 1vw;
+    left: 25vh;
+}
+#iconBu{
+    display: flex;
+    font-size: 23px;
+    position: relative;
+    bottom: 1vw;
+    left: 68vh;
+    cursor: pointer;
+   
+}
+#icon{ 
+    cursor: pointer;
+}
+.list {
+    display: flex;
+    align-items: center;
+}
+
+.list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.item {
+    margin: 0 15px;
+    position: relative;
+    top: 4vw;
+    right: 40vh;
+}
+.link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.login-button button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #046114;
+}
+.login-button button:hover{
+    transform: scale(1.05);
+    background-color: #15ff00;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    .site {
+        padding: 1.5rem 4rem;
+        height: 6vh;
+    }
+    .image{
+        width: 35%;
+        position: relative;
+        bottom: 3vw;
+        right: 6vh;
+    }
+    .inputBusca{
+        font-size: 15px;
+        position: relative;
+        top: 1vw;
+        right: 15vh;
+    }
+    #iconBu{
+        font-size: 15px;
+        position: relative;
+        bottom: 3vw;
+        left: 10vh;
+        cursor: pointer;
+    }
+    .item {
+        display: none;
+    }
+    #icon{ 
+        margin: 0 15px;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .mobile-menu .login-button button:hover{
+        transform: scale(1.05);
+        background-color: #15ff00;
+    }
+    
+    .open {
+        display: block;
+    }
+}
+footer{
+    background-color: rgb(221, 154, 54); 
+    box-shadow: 0px 5px 10px rgb(97, 92, 92);
+    margin-top: 100vh;
+}
+.volt a{
+    display: flex;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    left: 95px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+#iconArr{
+    display: flex;
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+}
